@@ -12,8 +12,8 @@ export const InBetweenSection: React.FC = () => {
         </h2>
 
         <p className="mt-10 text-xl leading-6 text-center text-slate-400 max-md:max-w-full">
-          That's where transformation happens. That's where most organizations
-          struggle. We don't just plan for the future—we navigate the journey
+          That&apos;s where transformation happens. That&apos;s where most organizations
+          struggle. We don&apos;t just plan for the future—we navigate the journey
           with you, managing risks, maintaining momentum, and ensuring adoption
           at every stage.
         </p>

@@ -4,8 +4,8 @@ export const HeroSection: React.FC = () => {
   return (
     <section className="flex overflow-hidden flex-col items-center px-20 pt-5 pb-40 w-full font-bold bg-slate-900 max-md:px-5 max-md:pb-24 max-md:max-w-full">
       <div className="flex flex-col items-center -mb-8 ml-3 max-w-full w-[1259px] max-md:mb-2.5">
-        <div className="flex flex-col justify-center px-4 py-2.5 mt-32 max-w-full text-xs tracking-widest leading-none text-center text-white uppercase rounded-full border border-solid bg-white bg-opacity-10 border-white border-opacity-50 w-[293px] max-md:mt-10">
-          Transform your Digital Future
+        <div className="flex flex-col justify-center px-4 py-2.5 mt-10 mb-10 max-w-full text-xs tracking-widest leading-none text-center text-white uppercase rounded-full border border-solid bg-white bg-opacity-10 border-white border-opacity-50 w-[293px] max-md:mt-10">
+          Transforming your Digital Future
         </div>
 
         <h1 className="mt-14 text-8xl tracking-tighter text-center text-white leading-[96px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10">

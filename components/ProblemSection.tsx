@@ -1,33 +1,5 @@
 import React from "react";
 
-interface FeatureCardProps {
-  icon: string;
-  title: string;
-  description: string;
-}
-
-const FeatureCard: React.FC<FeatureCardProps> = ({
-  icon,
-  title,
-  description,
-}) => {
-  return (
-    <div className="flex grow gap-6 items-start px-10 py-7 w-full rounded-2xl border border-solid bg-slate-50 border-slate-100 max-md:px-5 max-md:mt-8">
-      <img
-        src={icon}
-        alt=""
-        className="object-contain shrink-0 w-12 rounded-full aspect-square"
-      />
-      <div className="flex flex-col grow shrink-0 mt-2 basis-0 w-fit">
-        <h4 className="self-start text-lg font-bold leading-loose text-slate-900">
-          {title}
-        </h4>
-        <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
-      </div>
-    </div>
-  );
-};
-
 export const ProblemSection: React.FC = () => {
   const features = [
     {
@@ -57,41 +29,35 @@ export const ProblemSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center pt-32 w-full bg-white max-md:pt-24 max-md:max-w-full">
-      <h2 className="text-6xl font-bold tracking-tighter text-center leading-[60px] text-slate-900 max-md:max-w-full max-md:text-4xl max-md:leading-10">
-        <span style={{ color: "rgba(9,24,57,1)" }}>
-          Most digital transformations fail
-        </span>
-        <br />
-        <span style={{ color: "rgba(188,157,88,1)" }}>
-          before they even begin.
-        </span>
-      </h2>
+    <section className="relative w-full bg-white px-6 py-24 lg:h-[913px] lg:px-0 lg:py-0">
+      <div className="mx-auto flex max-w-[976px] flex-col items-center">
+        <h2 className="max-w-[890px] text-center text-[42px] font-bold leading-[1.05] tracking-[-1px] lg:pt-[122px] lg:text-[60px] lg:leading-[60px] lg:tracking-[-1.5px]">
+          <span>Most digital transformations fail</span>
+          <br />
+          <span className="text-[#bc9d58]">before they even begin.</span>
+        </h2>
+        <p className="mt-8 max-w-[673px] text-center text-lg leading-8 text-slate-500 lg:mt-[43px] lg:text-xl lg:leading-[32.5px]">
+          The gap between strategy and execution is where most projects fail. We
+          specialize in closing that gap.
+        </p>
 
-      <p className="mt-14 text-xl leading-8 text-center text-slate-500 max-md:mt-10 max-md:max-w-full">
-        The gap between strategy and execution is where most projects falter. We
-        specialize in closing that gap.
-      </p>
-
-      <div className="mt-24 max-w-full w-[976px] max-md:mt-10">
-        <div className="flex gap-5 max-md:flex-col">
-          <div className="w-6/12 max-md:ml-0 max-md:w-full">
-            <FeatureCard {...features[0]} />
-          </div>
-          <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-            <FeatureCard {...features[1]} />
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-9 max-w-full w-[976px]">
-        <div className="flex gap-5 max-md:flex-col">
-          <div className="w-6/12 max-md:ml-0 max-md:w-full">
-            <FeatureCard {...features[2]} />
-          </div>
-          <div className="ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-            <FeatureCard {...features[3]} />
-          </div>
+        <div className="mt-16 grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:mt-[107px]">
+          {features.map((card) => (
+            <article
+              key={card.title}
+              className="group flex min-h-[155px] gap-6 rounded-2xl border border-slate-100 bg-slate-50 px-8 py-8 transition-all duration-200 hover:-translate-y-1 hover:border-[#bc9d58]/35 hover:bg-white hover:shadow-[0_18px_40px_-28px_rgba(9,24,57,0.45)]"
+            >
+              <img src={card.icon} alt="" className="size-9 shrink-0" />
+              <div className="flex flex-col">
+                <h3 className="text-lg font-bold leading-7 text-[#091839]">
+                  {card.title}
+                </h3>
+                <p className="mt-[14px] text-sm leading-[22.75px] text-slate-600">
+                  {card.description}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

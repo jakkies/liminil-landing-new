@@ -11,8 +11,8 @@ export const CTASection: React.FC = () => {
         </h2>
 
         <p className="self-stretch mt-10 text-xl leading-7 text-blue-100 max-md:max-w-full">
-          Let's start with a conversation. We'll assess your current operational
-          challenges and show you what's possible in the in-between.
+          Let&apos;s start with a conversation. We&apos;ll assess your current operational
+          challenges and show you what&apos;s possible in the in-between.
         </p>
 
         <button className="px-5 pb-10 mt-14 max-w-full text-lg font-black leading-loose text-orange-400 bg-white rounded-2xl w-[350px] max-md:mt-10">
