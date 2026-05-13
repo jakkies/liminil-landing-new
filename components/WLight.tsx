@@ -6,7 +6,7 @@ import { HeroSection } from "./HeroSection";
 import { ProblemSection } from "./ProblemSection";
 import { LogosSection } from "./LogosSection";
 import { InBetweenSection } from "./InBetweenSection";
-import { MethodologySection } from "./MethodologySection";
+{/*import { MethodologySection } from "./MethodologySection";*/ }
 import { PlatformSection } from "./PlatformSection";
 import { CaseStudySection } from "./CaseStudySection";
 import { CTASection } from "./CTASection";
@@ -22,7 +22,7 @@ function WLight() {
       <ProblemSection />
       <LogosSection />
       <InBetweenSection />
-      <MethodologySection />
+      {/*<MethodologySection />*/}
       <PlatformSection />
       {/* <CaseStudySection /> */}
       <CTASection />

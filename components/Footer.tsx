@@ -1,6 +1,6 @@
 import React from "react";
 
-const FooterColumn: React.FC<{ title: string; items: string[] }> = ({
+const FooterColumn: React.FC<{ title: string; items: React.ReactNode[] }> = ({
   title,
   items,
 }) => {
@@ -10,11 +10,9 @@ const FooterColumn: React.FC<{ title: string; items: string[] }> = ({
         {title}
       </h4>
       <ul className="mt-10 space-y-6 text-sm leading-none">
-        {items.map((item) => (
-          <li key={item}>
-
+        {items.map((item, index) => (
+          <li key={index}>
             {item}
-
           </li>
         ))}
       </ul>
@@ -24,18 +22,16 @@ const FooterColumn: React.FC<{ title: string; items: string[] }> = ({
 
 export const Footer: React.FC = () => {
   const methodologyItems = [
-    "We combine mindset transformation with industrial-strength technology to bridge the gap."
+    <a href="#method">Method</a>,
+    <a href="#platform">Platform</a>,
   ];
 
   const platformItems = [
-    "PowerIntegrator Core",
-    "Legacy API Mapping",
-    "Real-time Orchestration",
-    "Security & Compliance",
+    <a href="https://www.linkedin.com/company/liminil-the-space-in-between/" target="_blank">LinkedIn</a>
   ];
 
   return (
-    <footer id="contact" className="relative w-full border-t border-white/10 bg-[#091839] px-6 py-12 text-slate-400 lg:h-[498px] lg:px-0 lg:py-0">
+    <footer id="contact" className="relative w-full border-t border-white/10 bg-[#091839] px-6 py-12 text-slate-400 lg:h-[321px] lg:px-0 lg:py-0">
       <div className="mx-auto max-w-[1280px]">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[282px_282px_282px_282px] lg:gap-[32px] lg:pt-[48px]">
           <div>
@@ -51,8 +47,8 @@ export const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/*<FooterColumn title="Methodology" items={methodologyItems} />
-          <FooterColumn title="Platform" items={platformItems} />*/}
+          <FooterColumn title="What we Do" items={methodologyItems} />
+          <FooterColumn title="Follow Us" items={platformItems} />
 
           <div className="flex flex-col">
             <h4 className="text-xs font-bold uppercase tracking-[1.2px] text-white">
@@ -113,7 +109,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-28 flex flex-wrap items-center justify-between border-t border-white/10 pt-1 text-xs lg:h-[111px] lg:mt-[107px]">
+        <div className="mt-28 flex flex-wrap items-center justify-between border-t border-white/10 pt-1 text-xs lg:h-[64px] lg:mt-[28px]">
           <p>
             © 2026 LIMINIL (Pty) Ltd). All rights
             reserved.

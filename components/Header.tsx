@@ -22,17 +22,15 @@ export const Header: React.FC = () => {
   return (
     <header className="fixed left-0 top-0 z-50 w-full pt-[21px]">
       <nav
-        className={`mx-auto flex w-[calc(100%-48px)] max-w-[1280px] items-center justify-between bg-[#091839] px-6 py-4 transition-all duration-300 rounded-2xl lg:h-[74px] ${
-          isScrolled ? "shadow-xl" : "shadow-none"
-        }`}
+        className={`mx-auto flex w-[calc(100%-48px)] max-w-[1280px] items-center justify-between bg-[#091839] px-6 py-4 transition-all duration-300 rounded-2xl lg:h-[74px] ${isScrolled ? "shadow-xl" : "shadow-none"
+          }`}
       >
         <a href="#top" className="relative z-10">
           <img
             src="https://api.builder.io/api/v1/image/assets/8f26f1c206a649d6a991327ba59478de/1f7f9cb99df9f71c0cb410404d3d0bbe12cf6b41?placeholderIfAbsent=true"
             alt="Liminil"
-            className={`h-auto transition-all duration-300 ${
-              isScrolled ? "w-[123px]" : "w-[164px]"
-            }`}
+            className={`h-auto transition-all duration-300 ${isScrolled ? "w-[123px]" : "w-[164px]"
+              }`}
           />
         </a>
 
@@ -94,11 +92,10 @@ export const Header: React.FC = () => {
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`fixed inset-0 z-0 flex flex-col items-center justify-center bg-[#091839] transition-all duration-300 md:hidden ${
-            isMenuOpen
+          className={`fixed inset-0 z-0 flex flex-col items-center justify-center bg-[#091839] transition-all duration-300 md:hidden ${isMenuOpen
               ? "visible opacity-100"
               : "invisible opacity-0 pointer-events-none"
-          }`}
+            }`}
         >
           <div className="flex flex-col items-center gap-8 text-xl font-medium text-slate-300">
             {navLinks.map((link) => (

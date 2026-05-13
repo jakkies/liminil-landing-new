@@ -11,10 +11,10 @@ const JourneyCard: React.FC<{ title: string; body: string }> = ({ title, body })
 
 export const InBetweenSection: React.FC = () => {
   return (
-    <section className="relative overflow-hidden border-y border-slate-200 bg-slate-50 px-6 py-24 lg:h-[638px] lg:px-0 lg:py-0">
+    <section id="method" className="relative overflow-hidden border-y border-slate-200 bg-slate-50 px-6 py-24 lg:h-[638px] lg:px-0 lg:py-0">
       <div className="mx-auto flex max-w-[1093px] flex-col items-center">
         <h2 className="text-center text-[36px] font-bold leading-tight tracking-[-1px] lg:pt-[105.5px] lg:text-5xl lg:leading-[48px] lg:tracking-[-1.2px]">
-          The real challenge is the{" "}
+          The magic happens in the{" "}
           <span className="text-[#bc9d58]">space in-between</span>
         </h2>
         <p className="mt-8 max-w-[1093px] text-center text-base leading-[26px] text-slate-400 lg:mt-[37px]">
@@ -36,7 +36,7 @@ export const InBetweenSection: React.FC = () => {
                 The In-Between
               </h3>
               <p className="mt-2.5 text-base font-medium leading-[22px]">
-                Liminil Execution Engine
+                Where the magic happens
               </p>
             </div>
             <JourneyCard

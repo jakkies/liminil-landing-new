@@ -3,10 +3,10 @@ import React from "react";
 export const HeroSection: React.FC = () => {
   return (
     <section id="top" className="relative flex min-h-[760px] w-full overflow-hidden bg-[#091839] px-6 py-8 lg:h-[718px] lg:min-h-0 lg:px-0 lg:py-0">
-      <div className="mx-auto flex w-full max-w-[1369px] flex-col items-center pt-[190px] text-center lg:pt-[148px]">
-        <p className="flex mb-12 h-[26px] w-[293px] items-center justify-center rounded-full border border-white/45 bg-white/[0.07] text-xs font-bold uppercase leading-4 tracking-[1.8px] text-white/75">
+      <div className="mx-auto flex w-full max-w-[1369px] flex-col items-center pt-[190px] text-center lg:pt-[184px]">
+        {/* <p className="flex mb-12 h-[26px] w-[293px] items-center justify-center rounded-full border border-white/45 bg-white/[0.07] text-xs font-bold uppercase leading-4 tracking-[1.8px] text-white/75">
           Transform your Digital Future
-        </p>
+        </p>*/}
 
         <h1 className="mt-[34px] text-[52px] font-bold leading-[1.03] tracking-[-1.2px] text-white sm:text-[72px] lg:mt-[10px] lg:text-[96px] lg:leading-[96px] lg:tracking-[-2.4px]">
           Master the Unknown.
